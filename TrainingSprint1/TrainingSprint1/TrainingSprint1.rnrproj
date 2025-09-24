@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <BuildTasksDirectory Condition=" '$(BuildTasksDirectory)' == ''">$(MSBuildProgramFiles32)\MSBuild\Microsoft\Dynamics\AX</BuildTasksDirectory>
+    <Model>ConVehicleManagement</Model>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <OutputPath>bin</OutputPath>
+    <SchemaVersion>2.0</SchemaVersion>
+    <GenerateCrossReferences>True</GenerateCrossReferences>
+    <RunAppCheckerRules>False</RunAppCheckerRules>
+    <LogAppcheckerDiagsAsErrors>False</LogAppcheckerDiagsAsErrors>
+    <DeployOnline>False</DeployOnline>
+    <ProjectGuid>{e6281bf3-8e12-4de0-bb76-ffe48a36b1fb}</ProjectGuid>
+    <Name>TrainingSprint1</Name>
+    <RootNamespace>TrainingSprint1</RootNamespace>
+    <StartupObject>TPProductTable</StartupObject>
+    <StartupType>Form</StartupType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Configuration>Debug</Configuration>
+    <DBSyncInBuild>False</DBSyncInBuild>
+    <GenerateFormAdaptors>False</GenerateFormAdaptors>
+    <Company>
+    </Company>
+    <Partition>initial</Partition>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DataEntityExpandParentChildRelations>False</DataEntityExpandParentChildRelations>
+    <DataEntityUseLabelTextAsFieldName>False</DataEntityUseLabelTextAsFieldName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Classes\" />
+    <Folder Include="Display Menu Items\" />
+    <Folder Include="EDT Containers\" />
+    <Folder Include="EDT Reals\" />
+    <Folder Include="EDT Strings\" />
+    <Folder Include="EDT Utc Date Times\" />
+    <Folder Include="Forms\" />
+    <Folder Include="Label Files\" />
+    <Folder Include="Menu Extensions\" />
+    <Folder Include="Menus\" />
+    <Folder Include="Tables\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AxClass\TPDepthComparer">
+      <SubType>Content</SubType>
+      <Name>TPDepthComparer</Name>
+      <Link>Classes\TPDepthComparer</Link>
+    </Content>
+    <Content Include="AxClass\TPFilesManager">
+      <SubType>Content</SubType>
+      <Name>TPFilesManager</Name>
+      <Link>Classes\TPFilesManager</Link>
+    </Content>
+    <Content Include="AxClass\TPProductCostCalculator">
+      <SubType>Content</SubType>
+      <Name>TPProductCostCalculator</Name>
+      <Link>Classes\TPProductCostCalculator</Link>
+    </Content>
+    <Content Include="AxEdt\TPCost">
+      <SubType>Content</SubType>
+      <Name>TPCost</Name>
+      <Link>EDT Reals\TPCost</Link>
+    </Content>
+    <Content Include="AxEdt\TPFile">
+      <SubType>Content</SubType>
+      <Name>TPFile</Name>
+      <Link>EDT Containers\TPFile</Link>
+    </Content>
+    <Content Include="AxEdt\TPFileDescription">
+      <SubType>Content</SubType>
+      <Name>TPFileDescription</Name>
+      <Link>EDT Strings\TPFileDescription</Link>
+    </Content>
+    <Content Include="AxEdt\TPFileExtension">
+      <SubType>Content</SubType>
+      <Name>TPFileExtension</Name>
+      <Link>EDT Strings\TPFileExtension</Link>
+    </Content>
+    <Content Include="AxEdt\TPFileUploadedDate">
+      <SubType>Content</SubType>
+      <Name>TPFileUploadedDate</Name>
+      <Link>EDT Utc Date Times\TPFileUploadedDate</Link>
+    </Content>
+    <Content Include="AxEdt\TPFileUrl">
+      <SubType>Content</SubType>
+      <Name>TPFileUrl</Name>
+      <Link>EDT Strings\TPFileUrl</Link>
+    </Content>
+    <Content Include="AxEdt\TPPositionNumber">
+      <SubType>Content</SubType>
+      <Name>TPPositionNumber</Name>
+      <Link>EDT Strings\TPPositionNumber</Link>
+    </Content>
+    <Content Include="AxEdt\TPProductDescription">
+      <SubType>Content</SubType>
+      <Name>TPProductDescription</Name>
+      <Link>EDT Strings\TPProductDescription</Link>
+    </Content>
+    <Content Include="AxEdt\TPProductId">
+      <SubType>Content</SubType>
+      <Name>TPProductId</Name>
+      <Link>EDT Strings\TPProductId</Link>
+    </Content>
+    <Content Include="AxEdt\TPProductPicture">
+      <SubType>Content</SubType>
+      <Name>TPProductPicture</Name>
+      <Link>EDT Containers\TPProductPicture</Link>
+    </Content>
+    <Content Include="AxEdt\TPQuantity">
+      <SubType>Content</SubType>
+      <Name>TPQuantity</Name>
+      <Link>EDT Strings\TPQuantity</Link>
+    </Content>
+    <Content Include="AxEdt\TPUnit">
+      <SubType>Content</SubType>
+      <Name>TPUnit</Name>
+      <Link>EDT Strings\TPUnit</Link>
+    </Content>
+    <Content Include="AxForm\TPBOMLine">
+      <SubType>Content</SubType>
+      <Name>TPBOMLine</Name>
+      <Link>Forms\TPBOMLine</Link>
+    </Content>
+    <Content Include="AxForm\TPProductFilesForm">
+      <SubType>Content</SubType>
+      <Name>TPProductFilesForm</Name>
+      <Link>Forms\TPProductFilesForm</Link>
+    </Content>
+    <Content Include="AxForm\TPProductTable">
+      <SubType>Content</SubType>
+      <Name>TPProductTable</Name>
+      <Link>Forms\TPProductTable</Link>
+    </Content>
+    <Content Include="AxForm\TPProductTableCreateDialogForm">
+      <SubType>Content</SubType>
+      <Name>TPProductTableCreateDialogForm</Name>
+      <Link>Forms\TPProductTableCreateDialogForm</Link>
+    </Content>
+    <Content Include="AxLabelFile\TP_en-US">
+      <SubType>Content</SubType>
+      <Name>TP_en-US</Name>
+      <Link>Label Files\TP_en-US</Link>
+    </Content>
+    <Content Include="AxMenuExtension\MainMenu.TrainingSprint1">
+      <SubType>Content</SubType>
+      <Name>MainMenu.TrainingSprint1</Name>
+      <Link>Menu Extensions\MainMenu.TrainingSprint1</Link>
+    </Content>
+    <Content Include="AxMenuItemDisplay\TPBOMLine">
+      <SubType>Content</SubType>
+      <Name>TPBOMLine</Name>
+      <Link>Display Menu Items\TPBOMLine</Link>
+    </Content>
+    <Content Include="AxMenuItemDisplay\TPProductFilesForm">
+      <SubType>Content</SubType>
+      <Name>TPProductFilesForm</Name>
+      <Link>Display Menu Items\TPProductFilesForm</Link>
+    </Content>
+    <Content Include="AxMenuItemDisplay\TPProductTable">
+      <SubType>Content</SubType>
+      <Name>TPProductTable</Name>
+      <Link>Display Menu Items\TPProductTable</Link>
+    </Content>
+    <Content Include="AxMenuItemDisplay\TPProductTableCreateDialogMenuItem">
+      <SubType>Content</SubType>
+      <Name>TPProductTableCreateDialogMenuItem</Name>
+      <Link>Display Menu Items\TPProductTableCreateDialogMenuItem</Link>
+    </Content>
+    <Content Include="AxMenu\ProductManagement">
+      <SubType>Content</SubType>
+      <Name>ProductManagement</Name>
+      <Link>Menus\ProductManagement</Link>
+    </Content>
+    <Content Include="AxTable\TPBOMLine">
+      <SubType>Content</SubType>
+      <Name>TPBOMLine</Name>
+      <Link>Tables\TPBOMLine</Link>
+    </Content>
+    <Content Include="AxTable\TPFilesTable">
+      <SubType>Content</SubType>
+      <Name>TPFilesTable</Name>
+      <Link>Tables\TPFilesTable</Link>
+    </Content>
+    <Content Include="AxTable\TPProductTable">
+      <SubType>Content</SubType>
+      <Name>TPProductTable</Name>
+      <Link>Tables\TPProductTable</Link>
+    </Content>
+    <Content Include="TP.en-US.label.txt">
+      <SubType>Content</SubType>
+      <Name>TP.en-US.label.txt</Name>
+      <DependentUpon>AxLabelFile\TP_en-US</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(BuildTasksDirectory)\Microsoft.Dynamics.Framework.Tools.BuildTasks.targets" />
+</Project>

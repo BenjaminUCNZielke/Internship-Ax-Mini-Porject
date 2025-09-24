@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33529.622
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FC65038C-1B2F-41E1-A629-BED71D161FFF}") = "TrainingSprint1 (ISV) [Contoso - vehicle management]", "TrainingSprint1\TrainingSprint1.rnrproj", "{E6281BF3-8E12-4DE0-BB76-FFE48A36B1FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6281BF3-8E12-4DE0-BB76-FFE48A36B1FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6281BF3-8E12-4DE0-BB76-FFE48A36B1FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B94EF30F-51E9-4B44-A932-1910C5DFF7F3}
+	EndGlobalSection
+EndGlobal
